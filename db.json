@@ -18,6 +18,145 @@
       ],
       "contactos": [],
       "id": 35
+    },
+    {
+      "numero_identificacion": "645465",
+      "nombre": "sggr",
+      "proyectos_relevantes": {
+        "url_imagen": "https://pbs.twimg.com/profile_images/2165553245/Chorizard_400x400.jpg",
+        "url_repositorio": "https://github.com/DwightHernandez/Pokedex-1/blob/main/main.js",
+        "titulo": "dsfdsf",
+        "descripcion": "dfdssdf"
+      },
+      "habilidades": [
+        "Node.js Eliminar"
+      ],
+      "contactos": [],
+      "id": 36
+    },
+    {
+      "numero_identificacion": "645465",
+      "nombre": "sggr",
+      "proyectos_relevantes": {
+        "url_imagen": "https://pbs.twimg.com/profile_images/2165553245/Chorizard_400x400.jpg",
+        "url_repositorio": "https://github.com/DwightHernandez/Pokedex-1/blob/main/main.js",
+        "titulo": "dsfdsf",
+        "descripcion": "dfdssdf"
+      },
+      "habilidades": [
+        "React Eliminar"
+      ],
+      "contactos": [],
+      "id": 37
+    },
+    {
+      "numero_identificacion": "645465",
+      "nombre": "sggr",
+      "proyectos_relevantes": {
+        "url_imagen": "https://pbs.twimg.com/profile_images/2165553245/Chorizard_400x400.jpg",
+        "url_repositorio": "https://github.com/DwightHernandez/Pokedex-1/blob/main/main.js",
+        "titulo": "dsfdsf",
+        "descripcion": "dfdssdf"
+      },
+      "habilidades": [
+        "MySQL"
+      ],
+      "contactos": [],
+      "id": 38
+    },
+    {
+      "numero_identificacion": "4465465465",
+      "nombre": "gfdfdfgfdg",
+      "proyectos_relevantes": {
+        "url_imagen": "https://pbs.twimg.com/profile_images/2165553245/Chorizard_400x400.jpg",
+        "url_repositorio": "https://github.com/DwightHernandez/Pokedex-1/blob/main/main.js",
+        "titulo": "ggffg",
+        "descripcion": "fssdfsfg"
+      },
+      "habilidades": [
+        "Node.js",
+        "ASP.NET"
+      ],
+      "contactos": [],
+      "id": 39
+    },
+    {
+      "numero_identificacion": "4465465465",
+      "nombre": "gfdfdfgfdg",
+      "proyectos_relevantes": {
+        "url_imagen": "https://pbs.twimg.com/profile_images/2165553245/Chorizard_400x400.jpg",
+        "url_repositorio": "https://github.com/DwightHernandez/Pokedex-1/blob/main/main.js",
+        "titulo": "ggffg",
+        "descripcion": "fssdfsfg"
+      },
+      "habilidades": [
+        "Java"
+      ],
+      "contactos": [],
+      "id": 40
+    },
+    {
+      "numero_identificacion": "4465465465",
+      "nombre": "gfdfdfgfdg",
+      "proyectos_relevantes": {
+        "url_imagen": "https://pbs.twimg.com/profile_images/2165553245/Chorizard_400x400.jpg",
+        "url_repositorio": "https://github.com/DwightHernandez/Pokedex-1/blob/main/main.js",
+        "titulo": "ggffg",
+        "descripcion": "fssdfsfg"
+      },
+      "habilidades": [
+        "Vue.js"
+      ],
+      "contactos": [],
+      "id": 41
+    },
+    {
+      "numero_identificacion": "4465465465",
+      "nombre": "gfdfdfgfdg",
+      "proyectos_relevantes": {
+        "url_imagen": "https://pbs.twimg.com/profile_images/2165553245/Chorizard_400x400.jpg",
+        "url_repositorio": "https://github.com/DwightHernandez/Pokedex-1/blob/main/main.js",
+        "titulo": "ggffg",
+        "descripcion": "fssdfsfg"
+      },
+      "habilidades": [
+        "ASP.NET"
+      ],
+      "contactos": [],
+      "id": 42
+    },
+    {
+      "numero_identificacion": "4465465465",
+      "nombre": "gfdfdfgfdg",
+      "proyectos_relevantes": {
+        "url_imagen": "https://pbs.twimg.com/profile_images/2165553245/Chorizard_400x400.jpg",
+        "url_repositorio": "https://github.com/DwightHernandez/Pokedex-1/blob/main/main.js",
+        "titulo": "ggffg",
+        "descripcion": "fssdfsfg"
+      },
+      "habilidades": [
+        "Angular"
+      ],
+      "contactos": [],
+      "id": 43
+    },
+    {
+      "numero_identificacion": "546465465",
+      "nombre": "fesfefefw",
+      "proyectos_relevantes": {
+        "url_imagen": "https://pbs.twimg.com/profile_images/2165553245/Chorizard_400x400.jpg",
+        "url_repositorio": "https://github.com/DwightHernandez/Pokedex-1/blob/main/main.js",
+        "titulo": "rggrgr",
+        "descripcion": "rgasagrsgrs"
+      },
+      "habilidades": [
+        "MySQL",
+        "Node.js",
+        "Java",
+        "Express.js"
+      ],
+      "contactos": [],
+      "id": 44
     }
   ]
 }

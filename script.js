@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('registrationForm');
   const skillsSection = document.getElementById('skillsSection');
-  const selectedSkills = []; // Array para almacenar habilidades seleccionadas temporalmente
+  const selectedSkills = []; // Array para almacenar habilidades seleccionadas
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -36,12 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "contactos": [] // Añade aquí la lógica para obtener los contactos
     };
 
+    // Enviar los datos al servidor (json-server)
+    addToJSON(data);
+
     // Mostrar la sección de la tabla con los datos
     document.getElementById('tableSection').style.display = 'block';
     fillTable(data);
-
-    // Enviar los datos al servidor (json-server)
-    addToJSON(data);
   });
 
   const skillsList = [
@@ -53,34 +53,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const button = document.createElement('button');
     button.innerText = skill;
     button.addEventListener('click', () => {
-      // Agrega la habilidad seleccionada al array temporal
-      selectedSkills.push(skill);
-      updateSkillsDisplay(); // Actualiza la visualización de las habilidades
+      if (!selectedSkills.includes(skill)) {
+        selectedSkills.push(skill);
+        const skillDiv = document.createElement('div');
+        skillDiv.classList.add('skillItem');
+        skillDiv.innerHTML = `<img src="icon.png" alt="${skill}">${skill}
+          <button onclick="removeSkill(this)">Eliminar</button>`;
+        skillsSection.appendChild(skillDiv);
+      }
     });
     skillsSection.appendChild(button);
   });
 });
 
-function updateSkillsDisplay() {
-  const skillsSection = document.getElementById('skillsSection');
-  skillsSection.innerHTML = ''; // Limpiar la sección de habilidades
-
-  selectedSkills.forEach(skill => {
-    const skillDiv = document.createElement('div');
-    skillDiv.classList.add('skillItem');
-    skillDiv.innerHTML = `<img src="icon.png" alt="${skill}">${skill}
-      <button onclick="removeSkill('${skill}')">Eliminar</button>`;
-    skillsSection.appendChild(skillDiv);
-  });
-}
-
-function removeSkill(skill) {
-  // Elimina la habilidad del array temporal
-  const index = selectedSkills.indexOf(skill);
+function removeSkill(button) {
+  // Elimina la habilidad del array y del DOM
+  const skillToRemove = button.parentElement.innerText.trim();
+  const index = selectedSkills.indexOf(skillToRemove);
   if (index !== -1) {
     selectedSkills.splice(index, 1);
-    updateSkillsDisplay(); // Actualiza la visualización de las habilidades
   }
+  // Modificamos la forma de encontrar el elemento a eliminar
+  button.parentElement.parentElement.removeChild(button.parentElement);
 }
 
 function addToJSON(data) {
@@ -99,3 +93,20 @@ function addToJSON(data) {
   })
   .catch(error => console.error('Error al almacenar datos:', error));
 }
+
+// Nueva función para llenar la tabla con los datos del usuario
+function fillTable(data) {
+  document.getElementById('tableIdentification').innerText = data.numero_identificacion;
+  document.getElementById('tableName').innerText = data.nombre;
+  document.getElementById('tableImageURL').innerText = data.proyectos_relevantes.url_imagen;
+  document.getElementById('tableRepositoryURL').innerText = data.proyectos_relevantes.url_repositorio;
+  document.getElementById('tableTitle').innerText = data.proyectos_relevantes.titulo;
+  document.getElementById('tableDescription').innerText = data.proyectos_relevantes.descripcion;
+
+      const skillsListElement = document.getElementById('tableSkills');
+      skillsListElement.innerHTML = ''; // Limpiamos el contenido existente
+
+      const skillsList = data.habilidades;
+      const skillsListItems = skillsList.map(skill => `<li>${skill}</li>`).join('');
+      skillsListElement.innerHTML = `<ul>${skillsListItems}</ul>`;
+    }
