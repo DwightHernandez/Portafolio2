@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Datos</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registro de Datos</h1>
+    <form id="registrationForm">
+      <label for="identification">Número de Identificación:</label>
+      <input type="text" id="identification" placeholder="Ingrese la identificación" required>
+
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" placeholder="Ingrese su nombre y apellido" required>
+
+      <label for="imageURL">URL de la imagen:</label>
+      <input type="url" id="imageURL" placeholder="URL de la imagen" required>
+
+      <label for="repositoryURL">URL del repositorio:</label>
+      <input type="url" id="repositoryURL" placeholder="URL del repositorio" required>
+
+      <label for="title">Título del proyecto:</label>
+      <input type="text" id="title" placeholder="Ingrese el título" required>
+
+      <label for="description">Descripción del proyecto:</label>
+      <textarea id="description" placeholder="Ingrese la descripción"></textarea>
+
+      <label for="skills">Habilidades:</label>
+      <div id="skillsSection">
+        <!-- Botones de habilidades se generarán aquí dinámicamente -->
+      </div>
+
+      <button type="submit">Registrar</button>
+    </form>
+
+    <div id="tableSection" style="display:none;">
+      <h2>Datos del Usuario</h2>
+      <table id="userData">
+        <tr>
+          <th>Número de Identificación</th>
+          <td id="tableIdentification"></td>
+        </tr>
+        <tr>
+          <th>Nombre</th>
+          <td id="tableName"></td>
+        </tr>
+        <tr>
+          <th>URL de la imagen</th>
+          <td id="tableImageURL"></td>
+        </tr>
+        <tr>
+          <th>URL del repositorio</th>
+          <td id="tableRepositoryURL"></td>
+        </tr>
+        <tr>
+          <th>Título del proyecto</th>
+          <td id="tableTitle"></td>
+        </tr>
+        <tr>
+          <th>Descripción del proyecto</th>
+          <td id="tableDescription"></td>
+        </tr>
+        <tr>
+          <th>Habilidades</th>
+          <td id="tableSkills"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js" type="module" defer></script>
+</body>
+</html>

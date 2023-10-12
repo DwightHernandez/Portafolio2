@@ -1,0 +1,23 @@
+{
+  "registros": [
+    {
+      "numero_identificacion": "5275227",
+      "nombre": "fnnbgfgbf",
+      "proyectos_relevantes": {
+        "url_imagen": "https://github.com/DwightHernandez/Pokedex-1/blob/main/main.js",
+        "url_repositorio": "https://github.com/DwightHernandez/Pokedex-1/blob/main/main.js",
+        "titulo": "ghgdfhdfh",
+        "descripcion": "grhoñishboe"
+      },
+      "habilidades": [
+        "Angular",
+        "Node.js",
+        "MongoDB",
+        "Vue.js",
+        "React"
+      ],
+      "contactos": [],
+      "id": 35
+    }
+  ]
+}
